@@ -1,0 +1,53 @@
+.content {
+    width: fit-content;
+    margin: auto;
+    padding-top: 60px;
+}
+
+.button {
+    padding: 10px 20px;
+    width: 450px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+}
+
+.screenSaver {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 999;
+}
+
+@keyframes spinner {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+
+.loadingSpinner {
+    width: 50px;
+    height: 50px;
+    border: 10px solid #7375fa; /* Light grey */
+    border-top: 10px solid #71a6f7; /* Blue */
+    border-radius: 50%;
+    animation: spinner 1.5s linear infinite;
+}
+  
+.spinnerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}

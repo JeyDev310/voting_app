@@ -1,0 +1,38 @@
+.button {
+  appearance: none;
+  border: var(--border-width) solid var(--color-primary);
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  font-size: var(--font-4);
+  font-weight: var(--font-weight-bold);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.block {
+  width: 100%;
+}
+
+.secondary {
+  background-color: var(--color-white);
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.buttonSizeMd {
+  padding: var(--spacing-4);
+}
+
+.buttonSizeSm {
+  padding: var(--spacing-2) var(--spacing-4);
+}
+
+.prefix {
+  margin-right: var(--spacing-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
